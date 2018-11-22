@@ -7,7 +7,8 @@
   <body>
     <h1>Welcome to the songs index</h1>
     <% @all_songs.each do |song| %>
-    <%= song.name %>
+    <br><a href="/songs/<%= song.id %>"><%= song.name %></a>
+    <!--each one should be with a href - CLICKable-->
     <% end %>
   </body>
 </html>
