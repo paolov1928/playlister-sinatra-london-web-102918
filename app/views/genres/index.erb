@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>genres</title>
+  </head>
+  <body>
+    <h1>Welcome to the genres index</h1>
+    <% @all_genres.each do |genre| %>
+    <br><a href="/genres/<%= genre.id %>"><%= genre.name %></a>
+    <!--each one should be with a href - CLICKable-->
+    <% end %>
+  </body>
+</html>
